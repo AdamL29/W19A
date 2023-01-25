@@ -1,13 +1,15 @@
-def divide_number(x):
+def divide_number(num):
+    for x in range(num):
         if ((x%5 == 0) and (x%3 == 0)):
             print("FizzBuzz")
+            continue
         elif (x%5 == 0):
             print("Buzz")
+            continue
         elif (x%3 == 0):
             print("Fizz")
+            continue
         else:
             print("Try Again")
 
-x = 15
-# 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 25, 28, 30, 35
-divide_number(x)
+divide_number(16)
